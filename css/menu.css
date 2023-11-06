@@ -96,6 +96,37 @@ header {
     background-repeat: no-repeat;
 }
 
+h1 {
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8);
+    padding-top: .5%;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.links a {
+    color: white;
+    margin: 0 7%;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 1% 0;
+}
+
+.socials a {
+    color: white;
+    margin: 0 3%;
+}
+
 /* spacer */
 .spacer {
     width: 100%;
@@ -120,27 +151,285 @@ header {
     background-repeat: no-repeat;
 }
 
+h2 {
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+
+h3 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h4 {
+    font-size: 4rem;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    margin: 3% 9%;
+}
+
+.menu-item {
+    color: white;
+    padding: 2% 0;
+}
+
+.menu-product-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
+    height: 18vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: black;
 }
 
-/* mobile media query */
-@media (max-width: 428px) {
-    /* header section */
-    .header-title {
-        width: 75%;
-        margin: 0 auto;
+footer nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.join {
+    width: 30%;
+}
+
+.sign-up input {
+    width: 74%;
+    padding: 2% 0;
+    margin-left: 6%;
+    border: 1px solid white;
+    border-radius: 5%;
+}
+
+.sign-up button {
+    width: 20%;
+    padding: 2% 0;
+    border: 1px solid white;
+    border-radius: 5%;
+    margin: 0 -1%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sign-up button:hover {
+    color: white;
+    background-color: darkgray;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    padding-top: 1%;
+}
+
+.footer-links a {
+    color: white;
+}
+
+footer p {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 11%;
+    font-size: 2rem;
+
+}
+
+@media (max-width: 1280px) {
+    /* header */
+
+    .links a {
+        margin: 0 4%;
+    }
+
+    .socials a {
+        margin: 0 2%;
+    }
+
+    /* footer */
+    footer {
+        height: 18vh;
+    }
+
+   footer h3 {
         text-align: center;
         font-size: 4rem;
     }
 
+    .join {
+        width: 35%;
+    }
+
+    .sign-up {
+        display: flex;
+        align-content: flex-start;
+    }
+
+    .footer-links {
+        width: 65%;
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* header */
+
+    h1 {
+        font-size: 5rem;
+    }
+    .links {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .links a {
+        border: 1px solid white;
+    }
+
     /* menu */
+    .menu-section {
+        width: 70%;
+    }
+
+    .menu-item {
+        padding: 2% 0;
+    }
+
+    .menu h2 {
+        padding-top: 8%;
+    }
+
+    .menu h3 {
+        text-align: center;
+    }
+
+    .spacer {
+        height: 12vh;
+    }
+
+    /* footer */
+
+    footer {
+        padding: 0;
+        height: 35vh;
+    }
+
+    footer nav {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    footer h3 {
+        font-size: 4rem;
+        padding-top: 3%;
+    }
+
+    .join {
+        width: 100%;
+    }
+
+    .sign-up {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sign-up input {
+        width: 65%;
+        margin: 0;
+    }
+
+    .sign-up button {
+        width: 13%;
+    }
+
+    .sign-up input, .sign-up button {
+        text-align: center;
+        padding: 1% 0;
+    }
+
+    .sign-up buttton:hover {
+        color: white;
+        background-color: darkgray;
+    }
+
+    .footer-links {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        padding-right: 5%;
+    }
+
+    .footer-links a {
+        border: 1px solid white;
+    }
+
+    footer p {
+        display: flex;
+        justify-content: center;
+        padding: 3% 0;
+    }
+}
+/* mobile media query */
+@media (max-width: 428px) {
+    /* header section */
+   h1 {
+    font-size: 5rem;
+   }
+    /* menu */
+
+    h2 {
+        color: black;
+        background-color: white;
+        border-bottom: 1rem solid;
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    h3 {
+        color: black;
+        border: 5px solid black;
+    }
+
     .menu {
         background-image: none;
+        background-color: white;
+    }
+
+    .menu-item {
+        color: black;
+        text-align: center;
+        border-bottom: .5rem solid;
+    }
+
+    .menu-product-price {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-container {
+        background-color: white;
     }
 
     /* footer section */
@@ -148,5 +437,32 @@ footer {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+    }
+
+    footer h3 {
+        color: white;
+    }
+
+    .sign-up {
+        flex-direction: column;
+    }
+
+    .sign-up input {
+        width: 90%;
+        margin: 0 5%;
+        text-align: left;
+    }
+
+    .sign-up button {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .footer-links {
+        padding-top: 3%;;
+    }
+
+    footer p {
+        text-align: center;
     }
 }
